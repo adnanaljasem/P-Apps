@@ -17,3 +17,141 @@ Scr_EditSalesRecod_P As screen:
         Y: =74
         ZIndex: =2
 
+    lbl_OrderDate_Edit As label:
+        BorderThickness: =1
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Order Date"
+        X: =183
+        Y: =217
+        ZIndex: =3
+
+    lbl_Item_Edit As label:
+        BorderThickness: =1
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Item"
+        X: =183
+        Y: =283
+        ZIndex: =4
+
+    lbl_Region_Edit As label:
+        BorderThickness: =1
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Region"
+        X: =183
+        Y: =345
+        ZIndex: =5
+
+    lbl_Rep_Edit As label:
+        BorderThickness: =1
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Rep"
+        X: =183
+        Y: =415
+        ZIndex: =6
+
+    lbl_UnitPrice_Edit As label:
+        BorderThickness: =1
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Unit Price"
+        X: =183
+        Y: =481
+        ZIndex: =7
+
+    lbl_Units_Edit As label:
+        BorderThickness: =1
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Units"
+        X: =183
+        Y: =547
+        ZIndex: =8
+
+    lbl_Total_Edit As label:
+        BorderThickness: =1
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Total"
+        X: =183
+        Y: =614
+        ZIndex: =9
+
+    dp_OrderDate_Edit As datepicker:
+        X: =431
+        Y: =217
+        ZIndex: =10
+
+    txt_Item_Edit As text:
+        Default: =""
+        Width: =328
+        X: =431
+        Y: =283
+        ZIndex: =11
+
+    txt_Rep_Edit As text:
+        Default: =User().FullName
+        X: =431
+        Y: =415
+        ZIndex: =12
+
+    txt_UnitPrice_Edit As text:
+        Default: =""
+        X: =431
+        Y: =481
+        ZIndex: =13
+
+    txt_Units_Edit As text:
+        Default: =""
+        X: =431
+        Y: =547
+        ZIndex: =14
+
+    txt_Total__Edit As text:
+        Default: =txt_UnitPrice_Edit * txt_Units_Edit
+        DisplayMode: =DisplayMode.View
+        X: =431
+        Y: =614
+        ZIndex: =15
+
+    cb_Region_Edit As combobox:
+        DisplayFields: =["Region","Description"]
+        Items: |-
+            =Table(
+                {
+                    Region: "West",
+                    Description: "Britich Colombia"
+                },
+                {
+                    Region: "Central",
+                    Description: "Manitoba"
+                },
+                {
+                    Region: "East",
+                    Description: "PEI"
+                }
+            )
+        SearchFields: =["Region"]
+        SearchItems: |-
+            =Search(Table(
+                {
+                    Region: "West",
+                    Description: "Britich Colombia"
+                },
+                {
+                    Region: "Central",
+                    Description: "Manitoba"
+                },
+                {
+                    Region: "East",
+                    Description: "PEI"
+                }
+            ),cb_Region_Edit.SearchText,"Region")
+        Template: =ListItemTemplate.Double
+        X: =431
+        Y: =345
+        ZIndex: =16
+
