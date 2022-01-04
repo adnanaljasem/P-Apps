@@ -86,26 +86,26 @@ Scr_EditSalesRecod_P As screen:
         ZIndex: =10
 
     txt_Item_Edit As text:
-        Default: =""
+        Default: =gal_SalesData.Selected.Item
         Width: =328
         X: =431
         Y: =283
         ZIndex: =11
 
     txt_Rep_Edit As text:
-        Default: =User().FullName
+        Default: =gal_SalesData.Selected.Rep
         X: =431
         Y: =415
         ZIndex: =12
 
     txt_UnitPrice_Edit As text:
-        Default: =""
+        Default: =gal_SalesData.Selected.UnitPrice
         X: =431
         Y: =481
         ZIndex: =13
 
     txt_Units_Edit As text:
-        Default: =""
+        Default: =gal_SalesData.Selected.Units
         X: =431
         Y: =547
         ZIndex: =14
