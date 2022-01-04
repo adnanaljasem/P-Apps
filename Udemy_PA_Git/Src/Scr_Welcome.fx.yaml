@@ -402,7 +402,7 @@ Scr_Welcome As screen:
     btn_ShowSalesData As button:
         Height: =82
         OnSelect: =Navigate(Scr_SalesData_P)
-        Text: ="Show Sales Data "
+        Text: ="Show Sales Data"
         Width: =299
         X: =88
         Y: =236
