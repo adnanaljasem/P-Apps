@@ -81,6 +81,7 @@ Scr_EditSalesRecod_P As screen:
         ZIndex: =9
 
     dp_OrderDate_Edit As datepicker:
+        DefaultDate: =DateValue(gal_SalesData.Selected.OrderDate)
         X: =431
         Y: =217
         ZIndex: =10
