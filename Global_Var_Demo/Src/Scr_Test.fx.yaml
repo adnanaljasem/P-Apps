@@ -15,12 +15,3 @@ Scr_Test As screen:
         Y: =400
         ZIndex: =3
 
-    Icon1 As icon.BackArrow:
-        Height: =148
-        Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Scr_Home)
-        Width: =139
-        X: =1041
-        Y: =152
-        ZIndex: =4
-
