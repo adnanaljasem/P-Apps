@@ -15,3 +15,10 @@ Scr_Test As screen:
         Y: =400
         ZIndex: =3
 
+    Icon1 As icon.Home:
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Scr_Home)
+        X: =992
+        Y: =96
+        ZIndex: =4
+
