@@ -1034,19 +1034,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_EditSalesRecod_P.txt_Total__Edit.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_EditSalesRecod_P.txt_Total_Edit.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_EditSalesRecod_P.txt_Total__Edit.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_EditSalesRecod_P.txt_Total_Edit.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_EditSalesRecod_P",
-                "type": "Scr_EditSalesRecod_P.txt_Total__Edit"
+                "type": "Scr_EditSalesRecod_P.txt_Total_Edit"
               }
             }
           ],
@@ -1088,6 +1088,66 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr_EditSalesRecod_P.ico_UpdateSalesData.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr_EditSalesRecod_P.ico_UpdateSalesData.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr_EditSalesRecod_P",
+                "type": "Scr_EditSalesRecod_P.ico_UpdateSalesData"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr_EditSalesRecod_P.ico_UpdateSalesData.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr_EditSalesRecod_P.ico_UpdateSalesData.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Scr_EditSalesRecod_P",
+                "type": "Scr_EditSalesRecod_P.ico_UpdateSalesData"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
         }
       ],
       "tool": {

@@ -12,6 +12,20 @@ Scr_EditSalesRecod_P As screen:
     ico_UpdateSalesData As icon.Save:
         Height: =84
         Icon: =Icon.Save
+        OnSelect: |-
+            =Patch(
+                SalesData, gal_SalesData.Selected, 
+                {
+                    OrderDate: Text(dp_OrderDate_Edit.SelectedDate,"yyyy-mm-dd"),
+                    Region: First(cb_Region_Edit.SelectedItems).Region,
+                    Rep: txt_Rep_Edit.Text,
+                    Item: txt_Item_Edit.Text,
+                    Units: Value(txt_Units_Edit.Text),
+                    UnitPrice: Value(txt_UnitPrice_Edit.Text),
+                    Total: Value(txt_Total_Edit.Text)
+                }
+            );
+            Navigate(Scr_SalesDetails_P, Fade)
         Width: =114
         X: =1130
         Y: =74
@@ -111,7 +125,7 @@ Scr_EditSalesRecod_P As screen:
         Y: =547
         ZIndex: =14
 
-    txt_Total__Edit As text:
+    txt_Total_Edit As text:
         Default: =txt_UnitPrice_Edit * txt_Units_Edit
         DisplayMode: =DisplayMode.View
         X: =431
@@ -119,6 +133,22 @@ Scr_EditSalesRecod_P As screen:
         ZIndex: =15
 
     cb_Region_Edit As combobox:
+        DefaultSelectedItems: |-
+            =Filter(
+            Table(
+                {
+                    Region: "West",
+                    Description: "Britich Colombia"
+                },
+                {
+                    Region: "Central",
+                    Description: "Manitoba"
+                },
+                {
+                    Region: "East",
+                    Description: "PEI"
+                }
+            ), ThisRecord.Region = gal_SalesData.Selected.Region)
         DisplayFields: =["Region","Description"]
         Items: |-
             =Table(
