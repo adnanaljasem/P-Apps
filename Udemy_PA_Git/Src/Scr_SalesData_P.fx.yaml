@@ -50,8 +50,8 @@ Scr_SalesData_P As screen:
             TabIndex: =0
             Tooltip: ="View item details"
             Width: =60
-            X: =744
-            Y: =31
+            X: =768
+            Y: =30
             ZIndex: =3
 
         Separator2 As rectangle:
@@ -69,7 +69,8 @@ Scr_SalesData_P As screen:
             OnSelect: =Select(Parent)
             Size: =20
             Text: =ThisItem.Region
-            X: =579
+            X: =501
+            Y: =2
             ZIndex: =5
 
         lbl_Total As label:
@@ -79,7 +80,7 @@ Scr_SalesData_P As screen:
             Text: |-
                 ="Total: " & ThisItem.Total
             Width: =227
-            X: =487
+            X: =406
             Y: =60
             ZIndex: =7
 
@@ -93,6 +94,23 @@ Scr_SalesData_P As screen:
             X: =38
             Y: =60
             ZIndex: =8
+
+        ico_DeleteItem As icon.Trash:
+            Icon: =Icon.Trash
+            OnSelect: =Remove(SalesData, ThisItem)
+            X: =704
+            Y: =26
+            ZIndex: =9
+
+        Label11 As label:
+            Height: =50
+            Size: =17
+            Text: |-
+                ="Region:"
+            Width: =97
+            X: =404
+            Y: =1
+            ZIndex: =10
 
     ico_Filter As icon.Filter:
         Icon: =If(ShowFilter, Icon.Cancel, Icon.Filter)
@@ -149,14 +167,4 @@ Scr_SalesData_P As screen:
             X: =373
             Y: =42
             ZIndex: =4
-
-    Label11 As label:
-        Height: =50
-        Size: =17
-        Text: |-
-            ="Region:"
-        Width: =97
-        X: =543
-        Y: =130
-        ZIndex: =7
 
