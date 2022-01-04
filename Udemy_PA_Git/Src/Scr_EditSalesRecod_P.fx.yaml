@@ -1,0 +1,19 @@
+Scr_EditSalesRecod_P As screen:
+
+    ico_CancelEdit As icon.Cancel:
+        Height: =84
+        Icon: =Icon.Cancel
+        OnSelect: =Navigate(Scr_SalesDetails_P, Fade)
+        Width: =94
+        X: =1244
+        Y: =74
+        ZIndex: =1
+
+    ico_UpdateSalesData As icon.Save:
+        Height: =84
+        Icon: =Icon.Save
+        Width: =114
+        X: =1130
+        Y: =74
+        ZIndex: =2
+

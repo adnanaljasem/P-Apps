@@ -1,0 +1,48 @@
+Scr_Formulas As screen:
+
+    dp_Demo As datepicker:
+        X: =888
+        Y: =112
+        ZIndex: =1
+
+    txt_Demo As label:
+        Text: =Text(dp_Demo.SelectedDate,"yyyy-mm-dd")
+        Width: =420
+        X: =195
+        Y: =112
+        ZIndex: =2
+
+    ComboBox1 As combobox:
+        DisplayFields: =["Region","Description"]
+        IsSearchable: =false
+        Items: |-
+            =Table(
+                {
+                    Region: "West",
+                    Description: "Britich Colombia"
+                },
+                {
+                    Region: "Central",
+                    Description: "Manitoba"
+                },
+                {
+                    Region: "East",
+                    Description: "PEI"
+                }
+            )
+        SearchFields: =["Region"]
+        SearchItems: =[]
+        SelectMultiple: =false
+        Template: =ListItemTemplate.Double
+        X: =88
+        Y: =225
+        ZIndex: =3
+
+    lbl_CurrentUser As label:
+        Height: =42
+        Text: =User().FullName
+        Width: =434
+        X: =88
+        Y: =347
+        ZIndex: =4
+

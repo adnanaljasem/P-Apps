@@ -1,0 +1,47 @@
+Scr_LogicalOperators As screen:
+
+    TextInput1 As text:
+        Default: ="Text input"
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    TextInput2 As text:
+        Default: ="Text input"
+        X: =397
+        Y: =40
+        ZIndex: =2
+
+    Label1 As label:
+        Text: =TextInput1.Text & " "& TextInput2.Text
+        Width: =442
+        X: =829
+        Y: =40
+        ZIndex: =3
+
+    lbl_FoundAdnanAljasem As label:
+        Text: =TextInput1.Text = "Adnan" && TextInput2.Text = "Aljasem"
+        X: =40
+        Y: =165
+        ZIndex: =4
+
+    lbl_IsNotAdnan As label:
+        Text: =TextInput1.Text <> "Adnan"
+        X: =40
+        Y: =247
+        ZIndex: =5
+
+    lbl_SubstringDemo As label:
+        Text: =TextInput1.Text in "Adnan Aljasem"
+        X: =40
+        Y: =352
+        ZIndex: =6
+
+    lbl_ArrayComparison As label:
+        Height: =50
+        Text: =TextInput1.Text in ["Adnan", "Jon","Tom", "Sara", "Ali"]
+        Width: =277
+        X: =40
+        Y: =457
+        ZIndex: =7
+

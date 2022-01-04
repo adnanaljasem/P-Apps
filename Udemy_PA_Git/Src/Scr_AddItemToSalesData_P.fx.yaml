@@ -1,0 +1,160 @@
+Scr_AddItemToSalesData_P As screen:
+
+    lbl_OrderDate_Add As label:
+        BorderThickness: =1
+        Text: ="Order Date"
+        X: =130
+        Y: =245
+        ZIndex: =1
+
+    lbl_Item_Add As label:
+        BorderThickness: =1
+        Text: ="Item"
+        X: =130
+        Y: =311
+        ZIndex: =2
+
+    lbl_Region_add As label:
+        BorderThickness: =1
+        Text: ="Region"
+        X: =130
+        Y: =377
+        ZIndex: =3
+
+    lbl_Rep_Add As label:
+        BorderThickness: =1
+        Text: ="Rep"
+        X: =130
+        Y: =443
+        ZIndex: =4
+
+    lbl_UnitPrice_Add As label:
+        BorderThickness: =1
+        Text: ="Unit Price"
+        X: =130
+        Y: =509
+        ZIndex: =5
+
+    lbl_Units_Add As label:
+        BorderThickness: =1
+        Text: ="Units"
+        X: =130
+        Y: =575
+        ZIndex: =6
+
+    lbl_Total_Add As label:
+        BorderThickness: =1
+        Text: ="Total"
+        X: =130
+        Y: =641
+        ZIndex: =7
+
+    dp_OrderDate_Add As datepicker:
+        X: =327
+        Y: =245
+        ZIndex: =8
+
+    txt_Item_Add As text:
+        Default: =""
+        Width: =328
+        X: =327
+        Y: =311
+        ZIndex: =9
+
+    txt_Rep_Add As text:
+        Default: =User().FullName
+        X: =327
+        Y: =443
+        ZIndex: =11
+
+    txt_UnitPrice_Add As text:
+        Default: =""
+        X: =327
+        Y: =509
+        ZIndex: =12
+
+    txt_Units_Add As text:
+        Default: =""
+        X: =327
+        Y: =575
+        ZIndex: =13
+
+    txt_Total_Add As text:
+        Default: =txt_UnitPrice_Add * txt_Units_Add
+        DisplayMode: =DisplayMode.View
+        X: =327
+        Y: =642
+        ZIndex: =14
+
+    ico_Save_Add As icon.Save:
+        Height: =84
+        Icon: =Icon.Save
+        OnSelect: |-
+            =Collect(
+                SalesData,
+                {
+                    OrderDate: Text(dp_OrderDate_Add.SelectedDate,"yyyy-mm-dd"),
+                    Region: First(cb_Region_Add.SelectedItems).Region,
+                    Rep: txt_Rep_Add.Text,
+                    Item: txt_Item_Add.Text,
+                    Units: Value(txt_Units_Add.Text),
+                    UnitPrice: Value(txt_UnitPrice_Add.Text),
+                    Total: Value(txt_Total_Add.Text)
+                }
+            );
+            Navigate(
+                Scr_SalesData_P,
+                Fade
+            )
+        Width: =96
+        X: =1078
+        Y: =62
+        ZIndex: =15
+
+    ico_Cancel_Add As icon.Cancel:
+        Height: =84
+        Icon: =Icon.Cancel
+        OnSelect: =Navigate(Scr_SalesData_P,Fade)
+        Width: =71
+        X: =1192
+        Y: =62
+        ZIndex: =16
+
+    cb_Region_Add As combobox:
+        DisplayFields: =["Region","Description"]
+        Items: |-
+            =Table(
+                {
+                    Region: "West",
+                    Description: "Britich Colombia"
+                },
+                {
+                    Region: "Central",
+                    Description: "Manitoba"
+                },
+                {
+                    Region: "East",
+                    Description: "PEI"
+                }
+            )
+        SearchFields: =["Region"]
+        SearchItems: |-
+            =Search(Table(
+                {
+                    Region: "West",
+                    Description: "Britich Colombia"
+                },
+                {
+                    Region: "Central",
+                    Description: "Manitoba"
+                },
+                {
+                    Region: "East",
+                    Description: "PEI"
+                }
+            ),cb_Region_Add.SearchText,"Region")
+        Template: =ListItemTemplate.Double
+        X: =327
+        Y: =373
+        ZIndex: =17
+
