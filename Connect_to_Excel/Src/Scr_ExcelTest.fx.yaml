@@ -1,0 +1,118 @@
+Scr_ExcelTest As screen:
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        Items: =SampleExcelData
+        Layout: =Layout.Vertical
+        TemplateFill: =If(ThisItem.IsSelected, RGBA(0, 0, 0, .2), RGBA(0, 0, 0, 0))
+        TemplatePadding: =0
+        TemplateSize: =Min(104, Self.Height - 60)
+        X: =42
+        Y: =88
+        ZIndex: =1
+
+        Title2 As label:
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                ="First Name: " & ThisItem.FirstName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =271
+            X: =32
+            Y: =8
+            ZIndex: =1
+
+        Subtitle2 As label:
+            Height: =43
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                ="Last Name: " & ThisItem.LastName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =296
+            X: =32
+            Y: =Title2.Y + Title2.Height + 4
+            ZIndex: =2
+
+        NextArrow2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator2 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+        Label1 As label:
+            OnSelect: =Select(Parent)
+            Size: =15
+            Text: |-
+                ="Age: " & ThisItem.Age
+            X: =376
+            Y: =16
+            ZIndex: =5
+
+    txt_FirstName As text:
+        Default: =""
+        HintText: ="First Name"
+        X: =788
+        Y: =120
+        ZIndex: =3
+
+    txt_LastName As text:
+        Default: =""
+        HintText: ="Last Name"
+        X: =788
+        Y: =195
+        ZIndex: =4
+
+    txt_Age As text:
+        Default: =""
+        Format: =TextFormat.Number
+        HintText: ="Age"
+        X: =788
+        Y: =287
+        ZIndex: =5
+
+    btn_AddItem As button:
+        OnSelect: |-
+            =Collect(
+                SampleExcelData,
+                {
+                    FirstName: txt_FirstName.Text,
+                    LastName: txt_LastName.Text,
+                    Age: txt_Age.Text
+                }
+            ); Reset(txt_FirstName);Reset(txt_LastName); Reset(txt_Age)
+        Text: ="Add"
+        X: =788
+        Y: =355
+        ZIndex: =6
+
+    btn_Update As button:
+        OnSelect: |-
+            =Patch(SampleExcelData,Gallery1.Selected, {FirstName: txt_FirstName.Text, LastName: txt_LastName.Text, Age: txt_Age.Text})
+        Text: ="Update"
+        X: =987
+        Y: =355
+        ZIndex: =7
+

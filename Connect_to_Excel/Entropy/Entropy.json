@@ -1,0 +1,65 @@
+{
+  "ComponentIndexes": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "btn_AddItem": 21,
+    "btn_Update": 22,
+    "Gallery1": 4,
+    "galleryTemplate1": 5,
+    "Label1": 15,
+    "NextArrow2": 13,
+    "Scr_ExcelTest": 3,
+    "Separator2": 14,
+    "Subtitle2": 12,
+    "Title2": 11,
+    "txt_Age": 20,
+    "txt_FirstName": 18,
+    "txt_LastName": 19
+  },
+  "FunctionParamsInvariantScripts": {},
+  "HeaderLastSavedDateTimeUTC": "01/05/2022 13:51:47",
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {
+    "CustomGallerySample": 1,
+    "SampleExcelData": 0
+  },
+  "OrderGroupControls": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 5,
+    "gallery": 0,
+    "icon": 2,
+    "label": 1,
+    "rectangle": 3,
+    "text": 4
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "btn_AddItem": 10,
+    "btn_Update": 11,
+    "Gallery1": 0,
+    "galleryTemplate1": 1,
+    "Label1": 3,
+    "NextArrow2": 4,
+    "Scr_ExcelTest": 0,
+    "Separator2": 6,
+    "Subtitle2": 5,
+    "Title2": 2,
+    "txt_Age": 9,
+    "txt_FirstName": 7,
+    "txt_LastName": 8
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.0159545,
+    "ControlCount": {},
+    "ErrorCount": 0
+  }
+}
