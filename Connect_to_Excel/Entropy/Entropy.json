@@ -5,11 +5,17 @@
     "btn_AddItem": 21,
     "btn_Delete": 25,
     "btn_Update": 22,
+    "btn_YesDelete": 29,
+    "btn_YesDelete_1": 30,
+    "DeleteDialoge": 31,
     "Gallery1": 4,
     "galleryTemplate1": 5,
+    "ico_deleteBackground": 28,
     "Icon2": 24,
     "Label1": 15,
+    "lbl_deleteDialoge": 27,
     "NextArrow2": 13,
+    "rec_deleteconformation": 26,
     "Scr_ExcelTest": 3,
     "Separator2": 14,
     "Subtitle2": 12,
@@ -19,7 +25,7 @@
     "txt_LastName": 19
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "01/05/2022 13:58:37",
+  "HeaderLastSavedDateTimeUTC": "01/05/2022 16:01:37",
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
@@ -29,33 +35,47 @@
     "CustomGallerySample": 1,
     "SampleExcelData": 0
   },
-  "OrderGroupControls": {},
+  "OrderGroupControls": {
+    "DeleteDialoge": {
+      "btn_YesDelete": 3,
+      "btn_YesDelete_1": 4,
+      "ico_deleteBackground": 1,
+      "lbl_deleteDialoge": 2,
+      "rec_deleteconformation": 0
+    }
+  },
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "button": 5,
-    "gallery": 0,
-    "icon": 2,
-    "label": 1,
-    "rectangle": 3,
+    "gallery": 1,
+    "icon": 3,
+    "label": 2,
+    "rectangle": 0,
     "text": 4
   },
   "PublishOrderIndices": {
     "App": 0,
-    "btn_AddItem": 11,
-    "btn_Delete": 13,
-    "btn_Update": 12,
-    "Gallery1": 0,
-    "galleryTemplate1": 1,
-    "Icon2": 4,
-    "Label1": 3,
-    "NextArrow2": 5,
+    "btn_AddItem": 15,
+    "btn_Delete": 19,
+    "btn_Update": 16,
+    "btn_YesDelete": 17,
+    "btn_YesDelete_1": 18,
+    "DeleteDialoge": 1,
+    "Gallery1": 2,
+    "galleryTemplate1": 3,
+    "ico_deleteBackground": 10,
+    "Icon2": 6,
+    "Label1": 5,
+    "lbl_deleteDialoge": 12,
+    "NextArrow2": 7,
+    "rec_deleteconformation": 0,
     "Scr_ExcelTest": 0,
-    "Separator2": 7,
-    "Subtitle2": 6,
-    "Title2": 2,
-    "txt_Age": 10,
-    "txt_FirstName": 8,
-    "txt_LastName": 9
+    "Separator2": 9,
+    "Subtitle2": 8,
+    "Title2": 4,
+    "txt_Age": 14,
+    "txt_FirstName": 11,
+    "txt_LastName": 13
   },
   "ResourcesJsonIndices": {
     "Image-SampleImage": 0
@@ -63,7 +83,9 @@
   "TemplateVersions": {},
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0159545,
-    "ControlCount": {},
+    "ControlCount": {
+      "button": 1
+    },
     "ErrorCount": 0
   }
 }

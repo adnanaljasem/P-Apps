@@ -1,4 +1,6 @@
 Scr_ExcelTest As screen:
+    OnVisible: |-
+        =UpdateContext({ShowDeleteConfirmation: false})
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         Items: =SampleExcelData
@@ -83,14 +85,14 @@ Scr_ExcelTest As screen:
         HintText: ="First Name"
         X: =788
         Y: =120
-        ZIndex: =3
+        ZIndex: =2
 
     txt_LastName As text:
         Default: =""
         HintText: ="Last Name"
         X: =788
         Y: =195
-        ZIndex: =4
+        ZIndex: =3
 
     txt_Age As text:
         Default: =""
@@ -98,7 +100,7 @@ Scr_ExcelTest As screen:
         HintText: ="Age"
         X: =788
         Y: =287
-        ZIndex: =5
+        ZIndex: =4
 
     btn_AddItem As button:
         OnSelect: |-
@@ -113,7 +115,7 @@ Scr_ExcelTest As screen:
         Text: ="Add"
         X: =788
         Y: =355
-        ZIndex: =6
+        ZIndex: =5
 
     btn_Update As button:
         OnSelect: |-
@@ -121,12 +123,79 @@ Scr_ExcelTest As screen:
         Text: ="Update"
         X: =987
         Y: =355
-        ZIndex: =7
+        ZIndex: =6
 
     btn_Delete As button:
-        OnSelect: =Remove(SampleExcelData, Gallery1.Selected)
+        OnSelect: |-
+            =UpdateContext({ShowDeleteConfirmation:true})
         Text: ="Delete"
         X: =892
         Y: =482
-        ZIndex: =8
+        ZIndex: =7
+
+    DeleteDialoge As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =13
+
+        rec_deleteconformation As rectangle:
+            Fill: =RGBA(204, 204, 204, 1)
+            Height: =640
+            Visible: =ShowDeleteConfirmation
+            Width: =1240
+            X: =40
+            Y: =40
+            ZIndex: =8
+
+        ico_deleteBackground As icon.Trash:
+            Color: =RGBA(0, 18, 107, .15)
+            Height: =496
+            Icon: =Icon.Trash
+            Visible: =ShowDeleteConfirmation
+            Width: =548
+            X: =400
+            Y: =112
+            ZIndex: =9
+
+        lbl_deleteDialoge As label:
+            Color: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =175
+            Size: =33
+            Text: ="Are You Sure You Want To Delete ?"
+            Visible: =ShowDeleteConfirmation
+            Width: =852
+            X: =256
+            Y: =160
+            ZIndex: =10
+
+        btn_YesDelete As button:
+            BorderColor: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =94
+            OnSelect: |-
+                =UpdateContext({ShowDeleteConfirmation:false})
+            Size: =33
+            Text: ="Yes"
+            Visible: =ShowDeleteConfirmation
+            Width: =242
+            X: =322
+            Y: =367
+            ZIndex: =11
+
+        btn_YesDelete_1 As button:
+            BorderColor: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =94
+            OnSelect: |-
+                =UpdateContext({ShowDeleteConfirmation:false})
+            Size: =33
+            Text: ="No"
+            Visible: =ShowDeleteConfirmation
+            Width: =242
+            X: =713
+            Y: =367
+            ZIndex: =12
 
