@@ -71,6 +71,13 @@ Scr_ExcelTest As screen:
             Y: =16
             ZIndex: =5
 
+        Icon2 As icon.Trash:
+            Icon: =Icon.Trash
+            OnSelect: =Remove(SampleExcelData,ThisItem)
+            X: =511
+            Y: =22
+            ZIndex: =6
+
     txt_FirstName As text:
         Default: =""
         HintText: ="First Name"
@@ -115,4 +122,11 @@ Scr_ExcelTest As screen:
         X: =987
         Y: =355
         ZIndex: =7
+
+    btn_Delete As button:
+        OnSelect: =Remove(SampleExcelData, Gallery1.Selected)
+        Text: ="Delete"
+        X: =892
+        Y: =482
+        ZIndex: =8
 

@@ -3,9 +3,11 @@
   "ControlUniqueIds": {
     "App": 1,
     "btn_AddItem": 21,
+    "btn_Delete": 25,
     "btn_Update": 22,
     "Gallery1": 4,
     "galleryTemplate1": 5,
+    "Icon2": 24,
     "Label1": 15,
     "NextArrow2": 13,
     "Scr_ExcelTest": 3,
@@ -17,7 +19,7 @@
     "txt_LastName": 19
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "01/05/2022 13:51:47",
+  "HeaderLastSavedDateTimeUTC": "01/05/2022 13:58:37",
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
@@ -39,19 +41,21 @@
   },
   "PublishOrderIndices": {
     "App": 0,
-    "btn_AddItem": 10,
-    "btn_Update": 11,
+    "btn_AddItem": 11,
+    "btn_Delete": 13,
+    "btn_Update": 12,
     "Gallery1": 0,
     "galleryTemplate1": 1,
+    "Icon2": 4,
     "Label1": 3,
-    "NextArrow2": 4,
+    "NextArrow2": 5,
     "Scr_ExcelTest": 0,
-    "Separator2": 6,
-    "Subtitle2": 5,
+    "Separator2": 7,
+    "Subtitle2": 6,
     "Title2": 2,
-    "txt_Age": 9,
-    "txt_FirstName": 7,
-    "txt_LastName": 8
+    "txt_Age": 10,
+    "txt_FirstName": 8,
+    "txt_LastName": 9
   },
   "ResourcesJsonIndices": {
     "Image-SampleImage": 0
