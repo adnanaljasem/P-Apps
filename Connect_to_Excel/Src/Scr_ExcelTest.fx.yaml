@@ -84,22 +84,22 @@ Scr_ExcelTest As screen:
         Default: =""
         HintText: ="First Name"
         X: =788
-        Y: =120
+        Y: =88
         ZIndex: =2
 
     txt_LastName As text:
         Default: =""
         HintText: ="Last Name"
         X: =788
-        Y: =195
+        Y: =148
         ZIndex: =3
 
     txt_Age As text:
         Default: =""
         Format: =TextFormat.Number
         HintText: ="Age"
-        X: =788
-        Y: =287
+        X: =787
+        Y: =221
         ZIndex: =4
 
     btn_AddItem As button:
@@ -113,8 +113,8 @@ Scr_ExcelTest As screen:
                 }
             ); Reset(txt_FirstName);Reset(txt_LastName); Reset(txt_Age)
         Text: ="Add"
-        X: =788
-        Y: =355
+        X: =787
+        Y: =288
         ZIndex: =5
 
     btn_Update As button:
@@ -122,15 +122,15 @@ Scr_ExcelTest As screen:
             =Patch(SampleExcelData,Gallery1.Selected, {FirstName: txt_FirstName.Text, LastName: txt_LastName.Text, Age: txt_Age.Text})
         Text: ="Update"
         X: =987
-        Y: =355
+        Y: =288
         ZIndex: =6
 
     btn_Delete As button:
         OnSelect: |-
             =UpdateContext({ShowDeleteConfirmation:true})
         Text: ="Delete"
-        X: =892
-        Y: =482
+        X: =894
+        Y: =358
         ZIndex: =7
 
     DeleteDialoge As group:
