@@ -63,7 +63,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "btn_AddItem",
-    "ParentIndex": 7,
+    "ParentIndex": 6,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -314,7 +314,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "btn_Delete",
-    "ParentIndex": 11,
+    "ParentIndex": 9,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -565,7 +565,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "btn_Update",
-    "ParentIndex": 8,
+    "ParentIndex": 7,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -873,7 +873,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "btn_YesDelete",
-    "ParentIndex": 9,
+    "ParentIndex": 10,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -1186,7 +1186,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "btn_YesDelete_1",
-    "ParentIndex": 10,
+    "ParentIndex": 11,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -1475,7 +1475,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Gallery1",
-    "ParentIndex": 1,
+    "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -1688,7 +1688,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "ico_deleteBackground",
-    "ParentIndex": 2,
+    "ParentIndex": 5,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -2306,7 +2306,14 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "Align",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Align",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "VerticalAlign",
       "X",
       "Y",
@@ -2351,7 +2358,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "lbl_deleteDialoge",
-    "ParentIndex": 4,
+    "ParentIndex": 8,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -2809,7 +2816,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "rec_deleteconformation",
-    "ParentIndex": 0,
+    "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -3626,7 +3633,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "txt_Age",
-    "ParentIndex": 6,
+    "ParentIndex": 4,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -3895,7 +3902,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "txt_FirstName",
-    "ParentIndex": 3,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -4164,7 +4171,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "txt_LastName",
-    "ParentIndex": 5,
+    "ParentIndex": 3,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
