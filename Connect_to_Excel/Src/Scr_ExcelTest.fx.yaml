@@ -114,7 +114,7 @@ Scr_ExcelTest As screen:
             ); Reset(txt_FirstName);Reset(txt_LastName); Reset(txt_Age)
         Text: ="Add"
         X: =787
-        Y: =288
+        Y: =301
         ZIndex: =5
 
     btn_Update As button:
@@ -122,7 +122,7 @@ Scr_ExcelTest As screen:
             =Patch(SampleExcelData,Gallery1.Selected, {FirstName: txt_FirstName.Text, LastName: txt_LastName.Text, Age: txt_Age.Text})
         Text: ="Update"
         X: =987
-        Y: =288
+        Y: =301
         ZIndex: =6
 
     btn_Delete As button:
@@ -130,7 +130,7 @@ Scr_ExcelTest As screen:
             =UpdateContext({ShowDeleteConfirmation:true})
         Text: ="Delete"
         X: =894
-        Y: =358
+        Y: =384
         ZIndex: =7
 
     DeleteDialoge As group:
