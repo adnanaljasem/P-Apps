@@ -113,7 +113,7 @@ Scr_ExcelTest As screen:
                 }
             ); Reset(txt_FirstName);Reset(txt_LastName); Reset(txt_Age)
         Text: ="Add"
-        X: =787
+        X: =774
         Y: =301
         ZIndex: =5
 
