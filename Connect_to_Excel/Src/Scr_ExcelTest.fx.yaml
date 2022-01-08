@@ -84,6 +84,7 @@ Scr_ExcelTest As screen:
     txt_FirstName As text:
         Default: =""
         HintText: ="First Name"
+        Width: =347
         X: =788
         Y: =88
         ZIndex: =2
@@ -91,6 +92,7 @@ Scr_ExcelTest As screen:
     txt_LastName As text:
         Default: =""
         HintText: ="Last Name"
+        Width: =347
         X: =788
         Y: =148
         ZIndex: =3
@@ -98,9 +100,11 @@ Scr_ExcelTest As screen:
     txt_Age As text:
         Default: =""
         Format: =TextFormat.Number
+        Height: =39
         HintText: ="Age"
+        Width: =348
         X: =787
-        Y: =208
+        Y: =209
         ZIndex: =4
 
     btn_AddItem As button:
