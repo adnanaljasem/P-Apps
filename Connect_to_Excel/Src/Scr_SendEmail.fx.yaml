@@ -39,7 +39,7 @@ Scr_SendEmail As screen:
         Height: =314
         Width: =754
         X: =54
-        Y: =287
+        Y: =300
         ZIndex: =6
 
     btn_SendEmail As button:
