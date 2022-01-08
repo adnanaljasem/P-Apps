@@ -1,5 +1,5 @@
 Scr_ExcelTest As screen:
-    Fill: =RGBA(253, 222, 207, 1)
+    Fill: =RGBA(247, 237, 237, 1)
     OnVisible: |-
         =UpdateContext({ShowDeleteConfirmation: false})
 
@@ -115,7 +115,7 @@ Scr_ExcelTest As screen:
             ); Reset(txt_FirstName);Reset(txt_LastName); Reset(txt_Age)
         Text: ="Add"
         X: =788
-        Y: =315
+        Y: =305
         ZIndex: =5
 
     btn_Update As button:
@@ -123,7 +123,7 @@ Scr_ExcelTest As screen:
             =Patch(SampleExcelData,Gallery1.Selected, {FirstName: txt_FirstName.Text, LastName: txt_LastName.Text, Age: txt_Age.Text})
         Text: ="Update"
         X: =987
-        Y: =314
+        Y: =304
         ZIndex: =6
 
     btn_Delete As button:
@@ -131,7 +131,7 @@ Scr_ExcelTest As screen:
             =UpdateContext({ShowDeleteConfirmation:true})
         Text: ="Delete"
         X: =894
-        Y: =423
+        Y: =403
         ZIndex: =7
 
     DeleteDialoge As group:
