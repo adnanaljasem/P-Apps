@@ -4,6 +4,7 @@
     "App": 1,
     "btn_AddItem": 18,
     "btn_Delete": 22,
+    "btn_SendEmail": 32,
     "btn_Update": 19,
     "btn_YesDelete": 20,
     "btn_YesDelete_1": 21,
@@ -12,28 +13,41 @@
     "galleryTemplate1": 6,
     "ico_deleteBackground": 14,
     "Icon2": 9,
+    "iconCheck1": 35,
+    "iconCircle1": 34,
     "Label1": 8,
+    "Label2": 25,
+    "Label3": 27,
+    "Label4": 29,
     "lbl_deleteDialoge": 16,
+    "LblSuccessMsg1": 36,
     "NextArrow2": 10,
     "rec_deleteconformation": 4,
+    "rt_EmailBody": 30,
     "Scr_ExcelTest": 3,
+    "Scr_SendEmail": 24,
+    "Scr_SuccessfulEmail": 33,
     "Separator2": 12,
     "Subtitle2": 11,
     "Title2": 7,
     "txt_Age": 17,
     "txt_FirstName": 13,
-    "txt_LastName": 15
+    "txt_LastName": 15,
+    "txt_Subject": 28,
+    "txt_To": 26
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "01/08/2022 00:03:33",
+  "HeaderLastSavedDateTimeUTC": "01/08/2022 01:17:32",
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "CustomGallerySample": 1,
-    "SampleExcelData": 0
+    "CustomGallerySample": 3,
+    "Gmail": 0,
+    "Outlook.com": 1,
+    "SampleExcelData": 2
   },
   "OrderGroupControls": {
     "DeleteDialoge": {
@@ -47,16 +61,19 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "button": 5,
+    "circle": 7,
     "gallery": 1,
     "icon": 3,
     "label": 2,
     "rectangle": 0,
+    "richTextEditor": 6,
     "text": 4
   },
   "PublishOrderIndices": {
     "App": 0,
     "btn_AddItem": 15,
     "btn_Delete": 19,
+    "btn_SendEmail": 0,
     "btn_Update": 16,
     "btn_YesDelete": 17,
     "btn_YesDelete_1": 18,
@@ -65,24 +82,35 @@
     "galleryTemplate1": 3,
     "ico_deleteBackground": 11,
     "Icon2": 6,
+    "iconCheck1": 0,
+    "iconCircle1": 0,
     "Label1": 5,
+    "Label2": 0,
+    "Label3": 0,
+    "Label4": 0,
     "lbl_deleteDialoge": 13,
+    "LblSuccessMsg1": 0,
     "NextArrow2": 7,
     "rec_deleteconformation": 0,
+    "rt_EmailBody": 0,
     "Scr_ExcelTest": 0,
+    "Scr_SendEmail": 0,
+    "Scr_SuccessfulEmail": 0,
     "Separator2": 9,
     "Subtitle2": 8,
     "Title2": 4,
     "txt_Age": 14,
     "txt_FirstName": 10,
-    "txt_LastName": 12
+    "txt_LastName": 12,
+    "txt_Subject": 0,
+    "txt_To": 0
   },
   "ResourcesJsonIndices": {
     "Image-SampleImage": 0
   },
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.171815,
+    "AnalysisLoadTime": 0.1932782,
     "ControlCount": {
       "button": 5,
       "gallery": 1,
@@ -94,7 +122,7 @@
       "screen": 1,
       "text": 3
     },
-    "DeserializationLoadTime": 0.6438743,
+    "DeserializationLoadTime": 0.669202,
     "ErrorCount": 0
   }
 }

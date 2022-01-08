@@ -1,0 +1,53 @@
+Scr_SendEmail As screen:
+
+    Label2 As label:
+        Text: ="To"
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    txt_To As text:
+        Default: ="Text input"
+        Height: =50
+        Width: =618
+        X: =190
+        Y: =40
+        ZIndex: =2
+
+    Label3 As label:
+        Text: ="Subject"
+        X: =40
+        Y: =139
+        ZIndex: =3
+
+    txt_Subject As text:
+        Default: ="Text input"
+        Height: =51
+        Width: =618
+        X: =190
+        Y: =128
+        ZIndex: =4
+
+    Label4 As label:
+        Text: ="Body"
+        X: =54
+        Y: =222
+        ZIndex: =5
+
+    rt_EmailBody As richTextEditor:
+        Default: ="Enter some <strong>rich text</strong> here."
+        Height: =314
+        Width: =754
+        X: =54
+        Y: =287
+        ZIndex: =6
+
+    btn_SendEmail As button:
+        OnSelect: |-
+            ='Outlook.com'.SendEmailV2(txt_To.Text, txt_Subject.Text, rt_EmailBody.HtmlText, {Importance:"High"}); 
+            Navigate(Scr_SuccessfulEmail,Cover)
+        Text: ="Send Email"
+        X: =54
+        Y: =643
+        ZIndex: =7
+

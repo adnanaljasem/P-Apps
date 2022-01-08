@@ -24,5 +24,40 @@
     "dependencies": {},
     "dependents": [],
     "id": "08f27ad2-4971-4158-aeb0-f0ef5383b856"
+  },
+  "8f5e7168-bc5b-4bbb-a02b-d1cf0302f83a": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_gmail/connections/da5df802797f4d15aef4022ec84ccaf2",
+    "connectionParameters": {},
+    "connectionRef": {
+      "authenticationType": "shared-application",
+      "displayName": "Gmail",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1539/1.0.1539.2620/gmail/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_gmail"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Gmail"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "8f5e7168-bc5b-4bbb-a02b-d1cf0302f83a"
+  },
+  "a2ec9170-97e8-4fba-90ec-208a4730860c": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_outlook/connections/72ab918651664a698ee1f23f21ee6f58",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Outlook.com",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1544/1.0.1544.2640/outlook/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_outlook"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Outlook.com"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "a2ec9170-97e8-4fba-90ec-208a4730860c"
   }
 }

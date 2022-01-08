@@ -93,6 +93,8 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Scr_ExcelTest"
+    "Scr_ExcelTest",
+    "Scr_SendEmail",
+    "Scr_SuccessfulEmail"
   ]
 }
