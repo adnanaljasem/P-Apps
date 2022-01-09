@@ -4,11 +4,13 @@ Scr_ExcelTest As screen:
         =UpdateContext({ShowDeleteConfirmation: false})
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        Height: =604
         Items: =SampleExcelData
         Layout: =Layout.Vertical
         TemplateFill: =If(ThisItem.IsSelected, RGBA(0, 0, 0, .2), RGBA(0, 0, 0, 0))
         TemplatePadding: =0
         TemplateSize: =Min(104, Self.Height - 60)
+        Width: =655
         X: =42
         Y: =88
         ZIndex: =1
@@ -119,7 +121,7 @@ Scr_ExcelTest As screen:
             ); Reset(txt_FirstName);Reset(txt_LastName); Reset(txt_Age)
         Text: ="Add"
         X: =788
-        Y: =305
+        Y: =279
         ZIndex: =5
 
     btn_Update As button:
@@ -127,7 +129,7 @@ Scr_ExcelTest As screen:
             =Patch(SampleExcelData,Gallery1.Selected, {FirstName: txt_FirstName.Text, LastName: txt_LastName.Text, Age: txt_Age.Text})
         Text: ="Update"
         X: =987
-        Y: =304
+        Y: =278
         ZIndex: =6
 
     btn_Delete As button:
@@ -135,7 +137,7 @@ Scr_ExcelTest As screen:
             =UpdateContext({ShowDeleteConfirmation:true})
         Text: ="Delete"
         X: =894
-        Y: =403
+        Y: =377
         ZIndex: =7
 
     DeleteDialoge As group:

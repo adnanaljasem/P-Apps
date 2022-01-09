@@ -36,10 +36,10 @@ Scr_SendEmail As screen:
 
     rt_EmailBody As richTextEditor:
         Default: ="Enter some <strong>rich text</strong> here."
-        Height: =314
-        Width: =754
+        Height: =329
+        Width: =769
         X: =54
-        Y: =300
+        Y: =285
         ZIndex: =6
 
     btn_SendEmail As button:
