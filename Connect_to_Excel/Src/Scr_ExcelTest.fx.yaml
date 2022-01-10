@@ -11,7 +11,7 @@ Scr_ExcelTest As screen:
         TemplatePadding: =0
         TemplateSize: =Min(104, Self.Height - 60)
         Width: =655
-        X: =42
+        X: =82
         Y: =88
         ZIndex: =1
 
