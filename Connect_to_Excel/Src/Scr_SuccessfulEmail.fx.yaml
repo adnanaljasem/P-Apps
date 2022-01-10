@@ -20,11 +20,12 @@
     LblSuccessMsg1 As label:
         Align: =Align.Center
         AutoHeight: =true
-        Height: =iconCircle1.Height
-        Size: =20
+        FontWeight: =FontWeight.Bold
+        Height: =92
+        Size: =25
         Text: ="Email was successfully Sent"
-        Width: =Parent.Width * 0.75
-        X: =Parent.Width/2 - Self.Width/2
-        Y: =iconCheck1.Y + iconCheck1.Height + 100
+        Width: =1054
+        X: =156
+        Y: =358
         ZIndex: =3
 
