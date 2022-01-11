@@ -47,7 +47,7 @@ Scr_SendEmail As screen:
             ='Outlook.com'.SendEmailV2(txt_To.Text, txt_Subject.Text, rt_EmailBody.HtmlText, {Importance:"High"}); 
             Navigate(Scr_SuccessfulEmail,Cover)
         Text: ="Send Email"
-        X: =54
-        Y: =643
+        X: =390
+        Y: =674
         ZIndex: =7
 

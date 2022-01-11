@@ -1,5 +1,5 @@
 Scr_ExcelTest As screen:
-    Fill: =RGBA(215, 223, 240, 1)
+    Fill: =RGBA(255, 255, 255, 1)
     OnVisible: |-
         =UpdateContext({ShowDeleteConfirmation: false})
 
