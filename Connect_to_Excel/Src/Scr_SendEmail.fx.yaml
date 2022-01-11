@@ -10,7 +10,7 @@ Scr_SendEmail As screen:
         Default: ="Text input"
         Height: =50
         Width: =618
-        X: =190
+        X: =345
         Y: =40
         ZIndex: =2
 
