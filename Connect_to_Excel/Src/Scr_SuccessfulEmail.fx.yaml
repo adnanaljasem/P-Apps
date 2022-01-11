@@ -22,7 +22,7 @@
         AutoHeight: =true
         FontWeight: =FontWeight.Bold
         Height: =92
-        Size: =25
+        Size: =20
         Text: ="Email was successfully Sent"
         Width: =1054
         X: =156
