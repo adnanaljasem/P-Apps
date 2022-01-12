@@ -1,0 +1,9 @@
+[
+  {
+    "AddinConnectorId": "c6e3150c-e8a8-4933-bcc0-06b56516c83d",
+    "AddinId": "6d1f157d-95bf-406d-b65d-cfd3240f724e",
+    "Name": "AddToStock",
+    "ServiceKind": "AddinWadl",
+    "Type": "ServiceInfo"
+  }
+]

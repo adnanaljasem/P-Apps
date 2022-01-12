@@ -1,0 +1,51 @@
+Scr_AddToStock As screen:
+
+    dd_PickProduct As dropdown:
+        Items: =Products
+        X: =286
+        Y: =87
+        ZIndex: =1
+
+    lbl_ProductTitle As label:
+        Text: ="Product"
+        X: =104
+        Y: =87
+        ZIndex: =2
+
+    lbl_StockReport As label:
+        Text: =dd_PickProduct.Selected.StockQuantity & " " & dd_PickProduct.Selected.UOM.Value & " of " & dd_PickProduct.Selected.Title
+        Width: =546
+        X: =628
+        Y: =87
+        ZIndex: =3
+
+    txt_Quantity As text:
+        Default: =""
+        Format: =TextFormat.Number
+        X: =286
+        Y: =180
+        ZIndex: =4
+
+    lbl_ReorderQuantity As label:
+        Text: ="Reorder Quantity"
+        X: =104
+        Y: =180
+        ZIndex: =5
+
+    lbl_UOM As label:
+        Text: =dd_PickProduct.Selected.UOM.Value
+        X: =628
+        Y: =180
+        ZIndex: =6
+
+    btn_AddToStock As button:
+        Height: =68
+        OnSelect: |-
+            =AddToStock.Run(dd_PickProduct.Selected.ID, txt_Quantity.Text);
+            Navigate(Scr_Orders, Fade)
+        Text: ="Add To Stock"
+        Width: =320
+        X: =286
+        Y: =270
+        ZIndex: =7
+
