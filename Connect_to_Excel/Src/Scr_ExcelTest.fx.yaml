@@ -136,8 +136,8 @@ Scr_ExcelTest As screen:
         OnSelect: |-
             =UpdateContext({ShowDeleteConfirmation:true})
         Text: ="Delete"
-        X: =855
-        Y: =416
+        X: =907
+        Y: =429
         ZIndex: =7
 
     DeleteDialoge As group:
