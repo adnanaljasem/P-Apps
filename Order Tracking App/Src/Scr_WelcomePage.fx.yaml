@@ -2,11 +2,16 @@ Scr_WelcomePage As screen:
     Fill: =RGBA(241, 244, 249, 1)
 
     btn_EnterApp As button:
-        Height: =80
+        Height: =140
         OnSelect: =Navigate(Scr_Orders,Fade)
+        RadiusBottomLeft: =25
+        RadiusBottomRight: =25
+        RadiusTopLeft: =25
+        RadiusTopRight: =25
+        Size: =30
         Text: ="Click Here to Start"
-        Width: =342
-        X: =582
-        Y: =626
+        Width: =524
+        X: =464
+        Y: =298
         ZIndex: =1
 
