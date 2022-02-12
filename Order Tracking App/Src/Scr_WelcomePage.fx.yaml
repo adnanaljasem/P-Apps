@@ -12,7 +12,7 @@ Scr_WelcomePage As screen:
         Size: =30
         Text: ="Click Here to Start"
         Width: =524
-        X: =464
+        X: =438
         Y: =311
         ZIndex: =1
 
