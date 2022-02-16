@@ -102,7 +102,8 @@
     "UoM_DataCard2": 66
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "02/12/2022 09:28:31",
+  "HeaderLastSavedDateTimeUTC": "02/16/2022 10:46:47",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
@@ -242,7 +243,7 @@
   },
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.7749301,
+    "AnalysisLoadTime": 0.866306,
     "ControlCount": {
       "button": 4,
       "combobox": 2,
@@ -260,7 +261,7 @@
       "text": 7,
       "typedDataCard": 16
     },
-    "DeserializationLoadTime": 1.3027611,
+    "DeserializationLoadTime": 2.3565402,
     "ErrorCount": 3
   }
 }
