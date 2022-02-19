@@ -27,7 +27,6 @@
       "enableappembeddingux": false,
       "enablecomponentnamemaps": true,
       "enablecomponentscopeoldbehavior": false,
-      "enableeditcacherefreshfrequency": false,
       "enableexcelonlinebusinessv2connector": false,
       "enableideaspanel": true,
       "enableonstart": true,
